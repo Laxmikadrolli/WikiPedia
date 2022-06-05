@@ -92,7 +92,6 @@ public class WikipediaPage extends BasePage
 		
 		spanish.click();
 	}
-	// Bienvenidos a Wikipedia
 	
 	public void verifySuggestions(String suggestion)
 	{

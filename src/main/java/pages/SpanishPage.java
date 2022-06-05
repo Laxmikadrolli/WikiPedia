@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class SpanishPage extends BasePage {
 	
 	//Declarations
-	@FindBy(xpath="//a[@title='inglés']")
+	@FindBy(xpath="//span[text()='English']")
 	private WebElement english;
 	
 	

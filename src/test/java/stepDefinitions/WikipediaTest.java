@@ -130,15 +130,16 @@ public class WikipediaTest {
 		wikipediaPage.clickOnSpanish();
 	}
 
-	@When("user verifies the page")
-	public void customer_verifies_the_page() {
-		spanishPage.verifylanguage();
+	@When("user should get {string} on the page")
+	public void user_should_get_on_the_page(String string) {
+		leapLegalSoftwarePage.verifyFirstHeading(string);
 
 	}
 
 	@When("user clicks on English")
 	public void customer_clicks_on_english() {
 		spanishPage.clickOnEnglish();
+		System.out.println("Test case passed : successfully changed the langauge to Spanish");
 	}
 
 	@Then("user should be able to click on {string} and user should land on {string} page")
